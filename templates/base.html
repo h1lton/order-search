@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  {% block title %}{% endblock %}
+  <link
+      href="{{ url_for("static", path="css/bootstrap.min.css") }}"
+      rel="stylesheet"
+  >
+</head>
+<body class="bg-dark">
+{% block content %}{% endblock %}
+<script
+    href="{{ url_for("static", path="js/bootstrap.bundle.min.js") }}"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+</script>
+<footer id="footer">
+  <div class="container mt-5 pb-4">
+    <div class="row">
+      <div class="col">
+      </div>
+      <div class="col-6 text-center">
+        <a class="link-light text-muted h5 text-decoration-none" href="/docs">docs</a>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

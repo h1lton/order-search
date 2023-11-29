@@ -1,0 +1,13 @@
+telethon
+alembic
+fastapi
+sqlalchemy[asyncio]
+black
+uvicorn[standard]
+aiomysql
+cryptography
+cryptg
+pydantic_settings
+black
+jinja2
+markdown
